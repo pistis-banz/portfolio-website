@@ -1,25 +1,23 @@
-# PROJECT_PROGRESS.md — Suivi portfolio
+# État du projet
 
-**État initial :** spécifications produites, code applicatif non commencé.
+- Branche : `main` ; base : `5c31bf4` (initialisation).
+- Lots 0, 1 et 2 : implémentés. Accueil complet, design responsive, navigation EN/FR, trois études de cas, About, CV HTML et contact via profil GitHub confirmé. Les projets et traductions sont stockés localement.
+- Lot 3 : export statique et redirection Cloudflare préparés ; publication et recette sur Cloudflare Pages non effectuées. Site de prévisualisation, pas encore prêt pour une publication professionnelle : un canal de contact fiable et les autorisations clients doivent être confirmés.
+- Lot 4 : facultatif, non commencé.
 
-| Lot | État initial | Preuves disponibles |
-|---|---|---|
-| 0 — Audit | À faire par Codex | Documentation fournie |
-| 1 — Première démo | À faire | — |
-| 2 — Bilingue et études de cas | À faire | — |
-| 3 — Qualité et publication | À faire | — |
-| 4 — Finitions | Optionnel | — |
+## Vérifications
 
-## Décisions
-- Positionnement : Software Developer ; full-stack, web et desktop.
-- Direction visuelle 03 : Créatif & Distinctif.
-- V1 statique EN/FR avec 3 études de cas ; Cloudflare Pages.
+- `corepack pnpm lint` : réussi.
+- `corepack pnpm typecheck` : réussi après régénération des types Next ; les anciens types de `.next` correspondaient à l'application initiale.
+- `corepack pnpm build` : réussi ; 16 pages bilingues générées.
+- Contrôle des 16 fichiers HTML exportés : langues, un H1 et liens internes vérifiés, aucune erreur détectée.
+- Contrôle visuel navigateur, clavier, zoom, lecteur d'écran et Cloudflare : non réalisés.
 
-## Tests réellement exécutés
-Aucun test applicatif : le projet n'est pas encore codé.
+## À compléter
 
-## Informations manquantes
-Voir `docs/10_CONTENUS_A_COMPLETER.md`.
-
-## Consigne pour Codex
-À la fin de chaque lot, remplacer les statuts ci-dessus, dater les preuves réellement exécutées et conserver les actions manuelles.
+- Confirmer nom public, e-mail ou LinkedIn, droits de présentation des projets et des captures.
+- Fournir les captures autorisées et anonymisées, le portrait et les CV PDF ; préciser les contributions Belkin et SALMOSPHARM, formation et dates si souhaité.
+- Choisir l'URL de production pour définir canonical, hreflang absolus, sitemap et image sociale. Aucune URL fictive n'est utilisée.
+- La typographie système évite un téléchargement externe au build ; les polices Sora, Inter et IBM Plex Mono restent à intégrer localement si souhaité.
+- Avant publication : contrôler l'accessibilité, le rendu mobile, les métadonnées et la redirection `/` sur la preview Pages. Commande de build : `corepack pnpm build` ; dossier de sortie : `out`.
+- Aucun commit, push ou déploiement effectué par Codex.
