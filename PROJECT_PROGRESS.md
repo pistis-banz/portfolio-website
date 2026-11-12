@@ -80,6 +80,11 @@
 - `pnpm lint`, `pnpm build` et `pnpm typecheck` réussis ; 16 pages exportées contrôlées pour leur langue, leur titre, leur description et leurs liens internes, sans erreur détectée. Sept routes locales ont répondu HTTP 200. Revue indépendante positive sur le code examiné.
 - Recette visuelle mobile, tablette et desktop et navigation clavier non réalisées : navigateur intégré indisponible, Chrome occupé. Canonical, hreflang, sitemap et image sociale restent à compléter lorsque l'URL définitive est arrêtée. Aucun commit, push ou déploiement de cette itération.
 
+## Favicon fourni par le propriétaire
+
+- Le favicon fourni à la racine a été copié vers `app/favicon.ico`, emplacement utilisé par Next.js ; le fichier d'origine est conservé à la racine. L'export contient le même fichier et la page française y fait référence.
+- `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis. Vérification visuelle dans un navigateur et mise en ligne non effectuées.
+
 ## Préférence de design
 
 - Le propriétaire souhaite utiliser `impeccable` et les autres compétences de design installées pertinentes pour guider les travaux d'interface. Préférence consignée dans `AGENTS.md`, sous réserve de leur disponibilité et des instructions de la session. Aucune interface modifiée.
