@@ -85,6 +85,11 @@
 - Le favicon fourni à la racine a été copié vers `app/favicon.ico`, emplacement utilisé par Next.js ; le fichier d'origine est conservé à la racine. L'export contient le même fichier et la page française y fait référence.
 - `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis. Vérification visuelle dans un navigateur et mise en ligne non effectuées.
 
+## Portrait fourni par le propriétaire
+
+- Portrait réel intégré dans le visuel de l'accueil EN/FR, avec texte alternatif localisé et accents de la direction graphique ; une copie est conservée à la racine.
+- `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis. Présence du fichier et des textes alternatifs vérifiée dans l'export des deux langues ; revue indépendante positive. Cadrage et rendu responsive restent à vérifier dans un navigateur.
+
 ## Préférence de design
 
 - Le propriétaire souhaite utiliser `impeccable` et les autres compétences de design installées pertinentes pour guider les travaux d'interface. Préférence consignée dans `AGENTS.md`, sous réserve de leur disponibilité et des instructions de la session. Aucune interface modifiée.

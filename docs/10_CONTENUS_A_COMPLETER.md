@@ -17,7 +17,7 @@ Les éléments sont organisés pour **ne pas bloquer l'implémentation**. Ce fic
 | M-01 | Captures FIJADA (public, backoffice, RTL) | Disponibles chez propriétaire, non transmises | Illustration de marque, sans fausse capture |
 | M-02 | Captures SALMOSPHARM (tableau de bord, produits, ventes) | Disponibles, non transmises | Illustration de marque, sans fausse capture |
 | M-03 | Captures Belkin (public, blog, admin) | Disponibles, non transmises | Illustration de marque, sans fausse capture |
-| M-04 | Portrait professionnel | Non fourni pour la présente version | Illustration abstraite plutôt que portrait fictif |
+| M-04 | Portrait professionnel | Fourni par le propriétaire | Portrait réel intégré à l'accueil |
 | M-05 | CV anglais PDF actualisé | Non fourni dans ce pack | Page Resume HTML ; cacher Download CV |
 | M-06 | CV français PDF actualisé | Non fourni | Page Resume HTML ; cacher Download CV |
 | M-07 | Date et intitulé exact de la formation | Niveau licence en informatique confirmé ; établissement et date non fournis | Formation décrite sans établissement ni date inventés |

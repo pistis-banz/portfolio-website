@@ -15,3 +15,8 @@ h1,h2,h3,.brand{font-family:Sora,Arial,sans-serif}
 .wrap{width:min(1280px,calc(100% - 2 * clamp(16px,4vw,48px)))}
 .hero h1,.page h1{letter-spacing:-.04em}
 .services{background:var(--surface)}
+
+/* The owner's real portrait is framed by the existing blue-and-lime identity. */
+.hero-portrait .portrait-image{object-fit:cover;object-position:center 38%}
+.hero-portrait .art-caption{z-index:1;background:var(--ink);padding:10px 12px}
+.portrait-accent{position:absolute;z-index:1;right:20px;top:20px;color:var(--ink);background:var(--lime);width:52px;height:52px;display:grid;place-items:center;font-size:32px;line-height:1}
