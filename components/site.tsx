@@ -1,6 +1,35 @@
 import Link from 'next/link';
 import {copy, projects, type Locale} from '@/content/data';
-export function Header({lang, path=''}:{lang:Locale;path?:string}) { const t=copy[lang]; const other=lang==='en'?'fr':'en'; return <><a className="skip" href="#main">{t.skip}</a><header className="header wrap"><Link className="brand" href={`/${lang}`} aria-label={`${t.home} — PB`}>PB<span>.</span></Link><nav aria-label={lang==='en'?'Main navigation':'Navigation principale'}><Link href={`/${lang}/projects`}>{t.projects}</Link><Link href={`/${lang}/about`}>{t.about}</Link><Link href={`/${lang}/resume`}>{t.resume}</Link><Link href={`/${lang}/contact`}>{t.contact}</Link></nav><Link className="language" href={`/${other}${path}`} aria-label={`${t.switch}: ${other.toUpperCase()}`}>{lang.toUpperCase()} <span>/</span> {other.toUpperCase()} ↗</Link></header></> }
+import styles from './site.module.css';
+import {MobileMenu} from './mobile-menu';
+
+export function Header({lang, path=''}:{lang:Locale;path?:string}) {
+  const t = copy[lang];
+  const other = lang === 'en' ? 'fr' : 'en';
+  const navigationLabel = lang === 'en' ? 'Main navigation' : 'Navigation principale';
+  const links = [
+    {route: '/projects', label: t.projects},
+    {route: '/about', label: t.about},
+    {route: '/resume', label: t.resume},
+    {route: '/contact', label: t.contact},
+  ].map(({route, label}) => ({
+    href: `/${lang}${route}`,
+    label,
+    current: path === route ? 'page' as const : route === '/projects' && path.startsWith(`${route}/`) ? 'location' as const : undefined,
+  }));
+
+  return <>
+    <a className="skip" href="#main">{t.skip}</a>
+    <header className={`header wrap ${styles.header}`}>
+      <Link className="brand" href={`/${lang}`} aria-label={`${t.home} — PB`}>PB<span>.</span></Link>
+      <nav className={styles.desktopNav} aria-label={navigationLabel}>
+        {links.map(link => <Link key={link.href} href={link.href} aria-current={link.current}>{link.label}</Link>)}
+      </nav>
+      <Link className="language" href={`/${other}${path}`} aria-label={`${t.switch}: ${other.toUpperCase()}`}>{lang.toUpperCase()} <span>/</span> {other.toUpperCase()} ↗</Link>
+      <MobileMenu links={links} navigationLabel={navigationLabel} />
+    </header>
+  </>;
+}
 export function Footer({lang}:{lang:Locale}) { const t=copy[lang]; return <footer className="footer"><div className="wrap footer-inner"><Link className="brand" href={`/${lang}`}>PB<span>.</span></Link><p>{t.footer}</p><a href="https://github.com/pistis-banz">GitHub ↗</a></div></footer> }
 export function Label({children}:{children:React.ReactNode}) {return <p className="label"><span>✳</span> {children}</p>}
 export function Cards({lang}:{lang:Locale}) {const t=copy[lang];return <div className="cards">{projects.map((p,i)=><article className={`card card-${i}`} key={p.slug}><Link href={`/${lang}/projects/${p.slug}`} className="card-art" aria-label={`${t.case}: ${p.name}`}><span className="art-number">0{i+1}</span><span className="art-symbol" aria-hidden="true">{i===0?'✳':i===1?'◉':'↗'}</span><span className="art-name">{p.name}</span></Link><div className="card-info"><p className="label">{p[lang].category}</p><h3><Link href={`/${lang}/projects/${p.slug}`}>{p.name} <span>↗</span></Link></h3><p>{p[lang].summary}</p><div className="tags">{p.stack.slice(0,3).map(s=><span key={s}>{s}</span>)}</div></div></article>)}</div>}

@@ -6,9 +6,9 @@ Les éléments sont organisés pour **ne pas bloquer l'implémentation**. Ce fic
 
 | ID | Information | État | Comportement d'attente |
 |---|---|---|---|
-| P-01 | Au moins un contact fiable : e-mail professionnel ou profil LinkedIn exact | À fournir/confirmer | Ne pas publier une page Contact vide ; obtenir ce point avant publicité du site |
-| P-02 | Droit de présentation des projets clients et de leurs captures | À vérifier | Présentation factuelle et sans images privées ; pas de données client sensibles |
-| P-03 | Nom public exact tel que souhaité sur le site et CV | À confirmer | Marque `PB` + identité générique provisoire pour la preview, sans fabriquer un nom complet |
+| P-01 | Au moins un contact fiable : e-mail professionnel ou profil LinkedIn exact | Fourni par le propriétaire | Coordonnées intégrées ; vérifier les destinations en conditions réelles avant publication |
+| P-02 | Droit de présentation des projets clients et de leurs captures | Présentation publique des noms FIJADA et Belkin SAS confirmée ; droits sur les captures à confirmer séparément | Aucun média client sans vérification des droits et des données sensibles |
+| P-03 | Nom public exact tel que souhaité sur le site et CV | Fourni : Pistis Banzietele | Nom intégré |
 
 ## B. Importants mais non bloquants pour une préversion
 
@@ -20,15 +20,15 @@ Les éléments sont organisés pour **ne pas bloquer l'implémentation**. Ce fic
 | M-04 | Portrait professionnel | Non fourni pour la présente version | Illustration abstraite plutôt que portrait fictif |
 | M-05 | CV anglais PDF actualisé | Non fourni dans ce pack | Page Resume HTML ; cacher Download CV |
 | M-06 | CV français PDF actualisé | Non fourni | Page Resume HTML ; cacher Download CV |
-| M-07 | Date, niveau et intitulé exact de la formation | À confirmer | Section Education minimale ou omise |
+| M-07 | Date et intitulé exact de la formation | Niveau licence en informatique confirmé ; établissement et date non fournis | Formation décrite sans établissement ni date inventés |
 | M-08 | Périodes des missions FIJADA / Belkin | À confirmer | Ne pas montrer une timeline chronologique datée |
-| M-09 | Contribution individuelle détaillée Belkin / SALMOSPHARM | À confirmer | Formulations sobres seulement |
+| M-09 | Contribution individuelle détaillée Belkin / SALMOSPHARM | Fournie par le propriétaire | Intégrée dans les études de cas |
 | M-10 | URLs publiques production FIJADA / Belkin | À confirmer/valider | Cacher `Visit site` |
 | M-11 | Publicité autorisée du code des 3 projets | FIJADA/Belkin privés, Salmospharm inaccessible ou non confirmé | Cacher `View code` sur les case studies |
-| M-12 | Technologies supplémentaires à mettre en avant (Node, PostgreSQL, Docker, etc.) | À valider sur base pratique | Garder stack des projets vérifiés |
+| M-12 | Technologies supplémentaires à mettre en avant | React, Next.js, TypeScript, JavaScript, Tailwind CSS, Node.js, Express.js, Laravel, PHP, Python, PostgreSQL, MySQL, SQLite et Prisma fournis | Compétences présentées séparément des stacks propres aux projets ; Docker non revendiqué |
 | M-13 | Témoignages clients / données chiffrées | Non fournis | Ne pas créer les sections |
 | M-14 | Nom de domaine `.dev` | Pas encore acheté dans ce cadre | Utiliser `*.pages.dev` |
-| M-15 | Langues parlées / niveau d'anglais | À confirmer pour le CV | Ne pas afficher niveau CECRL arbitraire |
+| M-15 | Langues parlées / niveau d'anglais | Français courant, anglais intermédiaire confirmés | Affichés sans niveau CECRL inventé |
 
 ## C. Informations acquises
 
