@@ -10,7 +10,7 @@ export const profile = {
   github: 'https://github.com/pistis-banz',
 };
 
-export const contactContent: Record<Locale, {eyebrow: string; title: string; description: string; emailAction: string; pageAction: string; directory: string; email: string; phone: string; social: string; location: string}> = {
+export const contactContent: Record<Locale, {eyebrow: string; title: string; description: string; emailAction: string; pageAction: string; directory: string; email: string; phone: string; social: string; location: string; subject: string; message: string; send: string; formHelp: string; requiredMessage: string; toastTitle: string; toastDescription: string; toastRegion: string}> = {
   en: {
     eyebrow: 'International collaborations',
     title: 'Let’s build something useful.',
@@ -22,6 +22,14 @@ export const contactContent: Record<Locale, {eyebrow: string; title: string; des
     phone: 'Phone',
     social: 'Find me online',
     location: 'Kinshasa, DR Congo',
+    subject: 'Subject',
+    message: 'Your message',
+    send: 'Send via email',
+    formHelp: 'This opens your email app with a draft to review and send. You can also use the email address shown here.',
+    requiredMessage: 'Please enter some text.',
+    toastTitle: 'Email app launch requested',
+    toastDescription: 'Review and send your message from your email app.',
+    toastRegion: 'Notifications',
   },
   fr: {
     eyebrow: 'Collaborations internationales',
@@ -34,6 +42,14 @@ export const contactContent: Record<Locale, {eyebrow: string; title: string; des
     phone: 'Téléphone',
     social: 'Me retrouver en ligne',
     location: 'Kinshasa, RD Congo',
+    subject: 'Objet',
+    message: 'Votre message',
+    send: 'Envoyer par e-mail',
+    formHelp: 'Votre messagerie s’ouvrira avec un brouillon à vérifier et à envoyer. Vous pouvez aussi utiliser l’adresse e-mail indiquée ici.',
+    requiredMessage: 'Veuillez saisir du texte.',
+    toastTitle: 'Ouverture de votre messagerie demandée',
+    toastDescription: 'Vérifiez et envoyez votre message depuis votre messagerie.',
+    toastRegion: 'Notifications',
   },
 };
 

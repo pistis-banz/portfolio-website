@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {ArrowRight, ArrowUpRight, Mail, MapPin, Phone} from 'lucide-react';
 import {contactContent, profile, type Locale} from '@/content/data';
+import {ContactForm} from './contact-form';
 import styles from './contact-section.module.css';
 
 export function ContactSection({lang, page = false}:{lang: Locale; page?: boolean}) {
@@ -13,10 +14,8 @@ export function ContactSection({lang, page = false}:{lang: Locale; page?: boolea
         <p className={styles.eyebrow}><span aria-hidden="true">✳</span> {t.eyebrow}</p>
         <Heading id="contact-heading" className={styles.title}>{t.title}</Heading>
         <p className={styles.description}>{t.description}</p>
-        <div className={styles.actions}>
-          <a className={styles.primary} href={`mailto:${profile.email}`}>{t.emailAction}<ArrowUpRight size={19} aria-hidden="true" /></a>
-          {!page && <Link className={styles.secondary} href={`/${lang}/contact`}>{t.pageAction}<ArrowRight size={18} aria-hidden="true" /></Link>}
-        </div>
+        <ContactForm lang={lang} />
+        {!page && <div className={styles.actions}><Link className={styles.secondary} href={`/${lang}/contact`}>{t.pageAction}<ArrowRight size={18} aria-hidden="true" /></Link></div>}
       </div>
       <div className={styles.directory}>
         <div className={styles.directoryHeading}><span>{t.directory}</span><span aria-hidden="true">✳</span></div>
