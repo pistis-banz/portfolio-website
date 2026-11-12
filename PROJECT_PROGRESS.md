@@ -58,6 +58,19 @@
 
 - Le propriétaire souhaite une sélection et une délégation automatiques aux rôles adaptés pour les prochaines demandes du dépôt. Préférence consignée dans `AGENTS.md`, applicable seulement si la session autorise et expose les sous-agents. En cas d'indisponibilité, exécution séquentielle annoncée ; aucun lancement permanent en arrière-plan.
 - Contrôles de cette modification documentaire : build et typecheck réussis ; `git diff --check` réussi. Lint lancé mais interrompu après une attente prolongée, résultat non vérifié. Aucun changement d'interface à valider au navigateur.
+- À la demande du propriétaire, mandat QA renforcé pour contrôler chaque tâche modifiant du code, proposer des actions en cas de constat et attendre son accord avant correction. Définition projet `controle_qualite` ajoutée sous `.codex/agents/` ; découverte et lancement effectifs dépendent du client et de la session. Un contrôle séquentiel annoncé reste possible si la délégation n'est pas disponible.
+- Vérifications de cette configuration : fichier TOML analysé, `pnpm lint`, `pnpm typecheck`, `pnpm build` et `git diff --check` réussis. L'agent sollicité pour une validation indépendante n'avait pas accès aux fichiers ; sa revue et la découverte automatique du rôle restent à vérifier dans une session compatible. Aucun changement d'interface.
+
+## Avertissement d'hydratation sur body
+
+- Ajout de `suppressHydrationWarning` au `body` du layout localisé pour éviter l'avertissement lié à un attribut injecté avant hydratation, visible sur la capture. Cette mesure masque les avertissements d'attributs de cet élément sans supprimer leur cause ; elle ne s'applique pas aux descendants.
+- `pnpm lint`, `pnpm build` et `pnpm typecheck` réussis. Revue indépendante ciblée positive. La reproduction avec l'extension du navigateur reste à vérifier manuellement.
+
+## Page 404 et déploiement Workers
+
+- Le site est accessible sur `https://pistis.pistisbasolua.workers.dev/`. Les 16 pages bilingues répondent en HTTP ; `/` redirige vers `/en`. Le rendu mobile, le clavier et l'envoi réel du formulaire restent à vérifier.
+- Une page 404 bilingue est générée statiquement et `wrangler.jsonc` configure Workers pour la servir avec un statut 404. Après publication, contrôler une URL inexistante imbriquée, les liens et le rendu sur mobile ; la validation en ligne n'a pas encore été effectuée.
+- `pnpm lint`, `pnpm build` et `pnpm typecheck` réussis ; le fichier exporté contient les messages et liens EN/FR. Revue QA : une phrase française dans un document anglais n'a pas d'attribut `lang` ; correction proposée en attente de l'accord du propriétaire.
 
 ## Préférence de design
 

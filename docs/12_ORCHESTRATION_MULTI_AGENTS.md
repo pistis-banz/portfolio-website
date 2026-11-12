@@ -26,7 +26,7 @@ Ce document complète, sans remplacer, les décisions du `AGENTS.md`, de `docs/0
 | Frontend & UI | `agents/02_FRONTEND_UI.md` | Home, composants, header/footer, responsive, direction 03 | Lots 1 à 2 |
 | Content & i18n | `agents/03_CONTENT_I18N.md` | Dictionnaires EN/FR, textes et données typées vérifiables | Lots 1 à 2 |
 | Project Pages | `agents/04_PROJECT_PAGES.md` | Projects, pages études de cas, About, Resume, Contact | Lot 2, préparations possibles après socle |
-| QA & Accessibility | `agents/05_QA_ACCESSIBILITY.md` | Audits ciblés, tests, signalement de défauts | À chaque gate d'intégration |
+| Contrôle qualité, régression et sécurité | `agents/05_QA_ACCESSIBILITY.md` | Revue indépendante, tests et signalement de défauts avec actions proposées | Après chaque tâche ajoutant ou modifiant du code, si la session autorise la délégation |
 | SEO & Release | `agents/06_SEO_RELEASE.md` | Métadonnées, export statique, préparation Cloudflare | Lot 3 |
 
 **Pourquoi aucun agent backend ?** Le site V1 est statique : pas d'API, de base de données ou de serveur applicatif.
@@ -59,7 +59,7 @@ LOT 1 — PARALLÈLE APRÈS CONTRATS
                              |
                              v
 GATE 1 — SÉQUENTIEL
-Orchestrator : intégrer -> lint/typecheck/build -> QA ciblée -> corriger -> aperçu visuel propriétaire
+Orchestrator : intégrer -> lint/typecheck/build -> QA ciblée -> présenter les constats -> accord du propriétaire avant correction -> aperçu visuel propriétaire
                              |
                              v
 LOT 2 — PARALLÈLE PAR DOSSIER
@@ -68,7 +68,7 @@ LOT 2 — PARALLÈLE PAR DOSSIER
                              |
                              v
 GATE 2 — SÉQUENTIEL
-Orchestrator : intégrer -> navigation EN/FR -> QA, accessibilité -> retouches
+Orchestrator : intégrer -> navigation EN/FR -> QA, accessibilité -> présenter les constats -> accord du propriétaire avant retouches
                              |
                              v
 LOT 3 — SÉQUENTIEL PUIS REVUES EN PARALLÈLE
@@ -110,7 +110,7 @@ Les tâches de plus d'une demi-page doivent être décomposées par résultat v�
 3. Si modifications dans une zone interdite, ne pas les intégrer automatiquement ; résoudre le conflit d'abord.
 4. Exécuter réellement `pnpm lint`, `pnpm typecheck`, `pnpm build` (si scripts présents) et les tests spécifiques utiles.
 5. Le QA agent vérifie les chemins critiques : `/en`, `/fr`, Projects, études de cas, About, Resume, Contact, switch de langue, menu mobile, clavier et liens.
-6. Tout bug `P0` ou `P1` bloque la gate. Un défaut cosmétique non critique peut être consigné pour le lot 4.
+6. Tout bug `P0` ou `P1` bloque la gate. Présenter tout problème détecté et les actions proposées au propriétaire ; attendre son aval explicite avant correction. Un défaut cosmétique peut être consigné pour le lot 4 après décision.
 7. Le coordinateur met à jour `PROJECT_PROGRESS.md` avec preuves, risques, statut et prochaine tâche.
 8. Proposer les commandes Git manuelles, sans les exécuter sans autorisation.
 

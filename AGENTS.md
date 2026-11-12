@@ -56,7 +56,8 @@ Construire **rapidement une V1 déployable**, sans élargir le périmètre. Le r
 
 - Pour chaque nouvelle demande concernant ce dépôt, le propriétaire souhaite que l'agent principal choisisse et lance automatiquement le ou les sous-agents adaptés à la tâche, sans qu'il ait à les nommer à chaque fois, lorsque la session expose la délégation et que ses instructions l'autorisent.
 - Choisir les rôles selon le besoin réel en s'appuyant sur `agents/` et `docs/12_ORCHESTRATION_MULTI_AGENTS.md` ; limiter la concurrence à trois sous-agents actifs et attribuer des fichiers d'écriture distincts. L'orchestrateur garde la responsabilité de l'intégration et des vérifications.
-- Les tâches dépendantes sont ordonnées ; un agent QA peut effectuer une revue indépendante lorsque c'est pertinent. Ne pas ajouter de travail artificiel ni faire croire qu'un agent a été lancé si ce n'est pas le cas.
+- Les tâches dépendantes sont ordonnées. Après chaque tâche ayant ajouté ou modifié du code, lancer l'agent de contrôle défini dans `agents/05_QA_ACCESSIBILITY.md` pour une revue indépendante lorsque la session l'autorise. Ne pas faire croire qu'un agent a été lancé si ce n'est pas le cas.
+- Si le contrôle relève un problème, en présenter les preuves, l'impact et les actions proposées, puis attendre l'aval explicite du propriétaire avant toute correction issue de cette revue. Si aucun problème n'est relevé, communiquer un résultat positif limité au périmètre vérifié et mentionner les contrôles non exécutés.
 - Si la délégation est indisponible ou interdite dans la session, exécuter la demande de façon séquentielle et signaler clairement cette limite. Les capacités et instructions de la session priment sur cette préférence de projet.
 - Cette préférence n'autorise pas à elle seule les commits, pushs, publications ou autres opérations réservées à une demande explicite.
 
