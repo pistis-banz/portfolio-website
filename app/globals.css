@@ -3,3 +3,15 @@
 
 /* Functional icons share one size and align with their labels. */
 .icon-inline{display:inline-block;vertical-align:-0.18em;flex-shrink:0}.card-info h3 .icon-inline{float:right}
+
+/* Self-hosted typefaces and colors from the approved design system. */
+@font-face{font-family:Sora;src:url('/fonts/sora.ttf') format('truetype');font-style:normal;font-weight:100 800;font-display:swap}
+@font-face{font-family:Inter;src:url('/fonts/inter.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('/fonts/ibm-plex-mono.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+:root{--ink:#17181d;--paper:#f8f8f5;--blue:#343bee;--lime:#dfff48;--surface:#edede9;--muted:#53565f;--border:#d4d4d0;--dark-surface:#292b34}
+body{font-family:Inter,Arial,sans-serif}
+h1,h2,h3,.brand{font-family:Sora,Arial,sans-serif}
+.label,.location,.ticker,.art-caption,.art-index,.art-number,.art-name,.service-no,.tags span,.footer p,.case-art{font-family:'IBM Plex Mono',monospace}
+.wrap{width:min(1280px,calc(100% - 2 * clamp(16px,4vw,48px)))}
+.hero h1,.page h1{letter-spacing:-.04em}
+.services{background:var(--surface)}

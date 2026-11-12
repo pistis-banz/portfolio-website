@@ -72,6 +72,14 @@
 - Une page 404 bilingue est générée statiquement et `wrangler.jsonc` configure Workers pour la servir avec un statut 404. Après publication, contrôler une URL inexistante imbriquée, les liens et le rendu sur mobile ; la validation en ligne n'a pas encore été effectuée.
 - `pnpm lint`, `pnpm build` et `pnpm typecheck` réussis ; le fichier exporté contient les messages et liens EN/FR. Revue QA : une phrase française dans un document anglais n'a pas d'attribut `lang` ; correction proposée en attente de l'accord du propriétaire.
 
+## Itération portfolio — crédibilité et réalisations
+
+- Cartes projets réorganisées avec FIJADA en évidence ; études de cas structurées autour du contexte, du besoin, de la solution, de la contribution et des technologies. Les emplacements de captures sont explicites et attendent des fichiers réels autorisés ; leur registre se trouve dans `components/project-visual.tsx`.
+- Page CV enrichie avec responsabilités confirmées, missions QA, formation et compétences. Les PDF restent masqués tant que leurs fichiers et chemins ne sont pas fournis (`content/resume-page.ts`) ; aucune période n'a été inventée.
+- Polices Sora, Inter et IBM Plex Mono hébergées localement avec leurs licences ; tokens principaux alignés sur la direction graphique. Textes de l'accueil raccourcis et descriptions SEO des pages À propos, Contact et CV précisées en EN/FR.
+- `pnpm lint`, `pnpm build` et `pnpm typecheck` réussis ; 16 pages exportées contrôlées pour leur langue, leur titre, leur description et leurs liens internes, sans erreur détectée. Sept routes locales ont répondu HTTP 200. Revue indépendante positive sur le code examiné.
+- Recette visuelle mobile, tablette et desktop et navigation clavier non réalisées : navigateur intégré indisponible, Chrome occupé. Canonical, hreflang, sitemap et image sociale restent à compléter lorsque l'URL définitive est arrêtée. Aucun commit, push ou déploiement de cette itération.
+
 ## Préférence de design
 
 - Le propriétaire souhaite utiliser `impeccable` et les autres compétences de design installées pertinentes pour guider les travaux d'interface. Préférence consignée dans `AGENTS.md`, sous réserve de leur disponibilité et des instructions de la session. Aucune interface modifiée.
