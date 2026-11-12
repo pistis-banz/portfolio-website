@@ -68,8 +68,8 @@ Après chaque lot :
 2. Exécuter `pnpm lint`, `pnpm typecheck`, `pnpm build` et les tests définis lorsque les scripts existent. **Ne jamais annoncer un test comme réussi sans l'avoir exécuté.**
 3. Vérifier un parcours utilisateur réel ou indiquer explicitement que la vérification navigateur reste manuelle.
 4. Mettre à jour `PROJECT_PROGRESS.md` : état, preuves, bugs, actions humaines, prochaine étape.
-5. Fournir les commandes Git manuelles, une proposition de message de commit et les instructions de déploiement si pertinent.
-6. Ne pas lancer automatiquement `git commit`, `git push`, fusion, suppression, migration ou publication sans instruction explicite.
+5. Créer automatiquement un commit pour les changements du lot, après vérification, sous l'identité Git du propriétaire. Exclure les changements sans rapport et signaler si un contrôle nécessaire n'a pas pu être effectué.
+6. Ne pas lancer automatiquement `git push`, fusion, suppression, migration ou publication sans instruction explicite. Si le propriétaire demande de ne pas commiter pour une tâche, respecter cette demande.
 
 ## Identité Git
 

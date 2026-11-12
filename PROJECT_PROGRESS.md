@@ -60,6 +60,7 @@
 - Contrôles de cette modification documentaire : build et typecheck réussis ; `git diff --check` réussi. Lint lancé mais interrompu après une attente prolongée, résultat non vérifié. Aucun changement d'interface à valider au navigateur.
 - À la demande du propriétaire, mandat QA renforcé pour contrôler chaque tâche modifiant du code, proposer des actions en cas de constat et attendre son accord avant correction. Définition projet `controle_qualite` ajoutée sous `.codex/agents/` ; découverte et lancement effectifs dépendent du client et de la session. Un contrôle séquentiel annoncé reste possible si la délégation n'est pas disponible.
 - Vérifications de cette configuration : fichier TOML analysé, `pnpm lint`, `pnpm typecheck`, `pnpm build` et `git diff --check` réussis. L'agent sollicité pour une validation indépendante n'avait pas accès aux fichiers ; sa revue et la découverte automatique du rôle restent à vérifier dans une session compatible. Aucun changement d'interface.
+- Le propriétaire autorise désormais les commits automatiques en fin de lot, sans nouvelle demande d'accord ; les pushs et déploiements exigent toujours une instruction explicite.
 
 ## Avertissement d'hydratation sur body
 
@@ -89,6 +90,7 @@
 
 - Portrait réel intégré dans le visuel de l'accueil EN/FR, avec texte alternatif localisé et accents de la direction graphique ; une copie est conservée à la racine.
 - `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis. Présence du fichier et des textes alternatifs vérifiée dans l'export des deux langues ; revue indépendante positive. Cadrage et rendu responsive restent à vérifier dans un navigateur.
+- Ajustement ultérieur du cadrage dans le Hero : légère augmentation de l'échelle, position centrée et suppression du texte et de la décoration superposés. L'image source reste inchangée ; `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis, revue indépendante positive. Le navigateur intégré est indisponible : vérifier le cadrage desktop, tablette et mobile manuellement.
 
 ## Préférence de design
 
