@@ -10,6 +10,33 @@ export const profile = {
   github: 'https://github.com/pistis-banz',
 };
 
+export const contactContent: Record<Locale, {eyebrow: string; title: string; description: string; emailAction: string; pageAction: string; directory: string; email: string; phone: string; social: string; location: string}> = {
+  en: {
+    eyebrow: 'International collaborations',
+    title: 'Let’s build something useful.',
+    description: 'Have a project or opportunity in mind? I’d be glad to hear from you.',
+    emailAction: 'Write me an email',
+    pageAction: 'More ways to connect',
+    directory: 'Get in touch',
+    email: 'Email',
+    phone: 'Phone',
+    social: 'Find me online',
+    location: 'Kinshasa, DR Congo',
+  },
+  fr: {
+    eyebrow: 'Collaborations internationales',
+    title: 'Construisons quelque chose d’utile.',
+    description: 'Un projet ou une opportunité en tête ? Je serai ravi d’en discuter avec vous.',
+    emailAction: 'M’écrire par e-mail',
+    pageAction: 'Tous les contacts',
+    directory: 'Me contacter',
+    email: 'E-mail',
+    phone: 'Téléphone',
+    social: 'Me retrouver en ligne',
+    location: 'Kinshasa, RD Congo',
+  },
+};
+
 export const aboutContent: Record<Locale, string[]> = {
   en: [
     'I’m a software developer focused on full-stack development, with experience designing and developing web applications and desktop software, including projects for clients.',

@@ -31,6 +31,15 @@ Construire **rapidement une V1 déployable**, sans élargir le périmètre. Le r
 - Design validé : « Créatif & Distinctif » blanc cassé/noir/bleu électrique/vert citron ; conserver la lisibilité et un aspect professionnel.
 - Jamais de changement silencieux de stack, d'architecture, de fournisseur cloud ou de direction artistique.
 
+## Compétences de design
+
+- Pour chaque travail sur le design, l'interface ou l'expérience utilisateur, utiliser la compétence installée `impeccable` lorsqu'elle est disponible et sélectionner les compétences pertinentes parmi `web-design-guidelines`, `ui-ux-pro-max`, `frontend-design` et `design-taste-frontend`. Les combiner lorsque leurs apports se complètent et que leurs instructions sont applicables.
+- Lire leurs instructions applicables et les utiliser comme guides de conception, d'implémentation et de vérification. Les demandes du propriétaire, les décisions du projet et les contraintes de la session priment en cas de conflit.
+- Si plusieurs choix de design importants restent réellement possibles ou si des recommandations applicables conduisent à un dilemme que les décisions existantes ne tranchent pas, présenter brièvement les options et demander au propriétaire de choisir. Régler directement les détails de réalisation non bloquants.
+- Conserver la direction « Créatif & Distinctif » validée, l'accessibilité et le périmètre V1. Ne pas appliquer une règle de style générique qui contredirait ces choix.
+- Pour les icônes de l'interface, utiliser `lucide-react` comme bibliothèque de référence, conformément au choix du propriétaire ; vérifier sa version et sa compatibilité avant installation, et conserver des libellés accessibles pour les actions. Envisager une autre bibliothèque seulement si une icône nécessaire n'existe pas dans Lucide.
+- Si une compétence n'est pas disponible dans la session, le signaler lorsqu'elle est nécessaire et poursuivre avec les compétences et ressources disponibles.
+
 ## Convention de code
 
 - TypeScript strict ; pas de `any` par commodité ; types explicites aux frontières de données.
@@ -42,6 +51,14 @@ Construire **rapidement une V1 déployable**, sans élargir le périmètre. Le r
 - Dépendances légères et maintenues. Interdire les dépendances pour simples effets décoratifs.
 - Pas de navigateur/localStorage comme prérequis à l'affichage du contenu.
 - Ne pas faire dépendre le site d'un service tiers pour ses contenus.
+
+## Délégation automatique souhaitée
+
+- Pour chaque nouvelle demande concernant ce dépôt, le propriétaire souhaite que l'agent principal choisisse et lance automatiquement le ou les sous-agents adaptés à la tâche, sans qu'il ait à les nommer à chaque fois, lorsque la session expose la délégation et que ses instructions l'autorisent.
+- Choisir les rôles selon le besoin réel en s'appuyant sur `agents/` et `docs/12_ORCHESTRATION_MULTI_AGENTS.md` ; limiter la concurrence à trois sous-agents actifs et attribuer des fichiers d'écriture distincts. L'orchestrateur garde la responsabilité de l'intégration et des vérifications.
+- Les tâches dépendantes sont ordonnées ; un agent QA peut effectuer une revue indépendante lorsque c'est pertinent. Ne pas ajouter de travail artificiel ni faire croire qu'un agent a été lancé si ce n'est pas le cas.
+- Si la délégation est indisponible ou interdite dans la session, exécuter la demande de façon séquentielle et signaler clairement cette limite. Les capacités et instructions de la session priment sur cette préférence de projet.
+- Cette préférence n'autorise pas à elle seule les commits, pushs, publications ou autres opérations réservées à une demande explicite.
 
 ## Travail par lots
 

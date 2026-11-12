@@ -1,3 +1,4 @@
+import {ArrowUpRight} from 'lucide-react';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {copy,isLocale,profile,projects,resumeContent} from '@/content/data';
@@ -11,7 +12,7 @@ export default async function Page({params}:{params:Promise<{lang:string}>}) {
     <div className="resume-grid">
       <div>
         <section><h2>{resume.experience}</h2><div className="resume-item"><p>{resume.experienceDescription}</p><p>{resume.qaExperience}</p></div></section>
-        <section><h2>{t.selected}</h2>{projects.map(p=><article className="resume-item" key={p.slug}><p className="label">{p[lang].category}</p><h3><Link href={`/${lang}/projects/${p.slug}`}>{p.name} ↗</Link></h3><p>{p[lang].summary}</p></article>)}</section>
+        <section><h2>{t.selected}</h2>{projects.map(p=><article className="resume-item" key={p.slug}><p className="label">{p[lang].category}</p><h3><Link href={`/${lang}/projects/${p.slug}`}>{p.name} <ArrowUpRight className="icon-inline" aria-hidden="true" size={18} /></Link></h3><p>{p[lang].summary}</p></article>)}</section>
         <section><h2>{resume.education}</h2><div className="resume-item"><p>{resume.educationDescription}</p></div></section>
       </div>
       <div>

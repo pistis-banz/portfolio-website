@@ -1,6 +1,7 @@
 'use client';
 
 import {useRef, type KeyboardEvent} from 'react';
+import {Minus, Plus} from 'lucide-react';
 import styles from './site.module.css';
 
 type NavigationLink = {href: string; label: string; current: 'page' | 'location' | undefined};
@@ -17,7 +18,7 @@ export function MobileMenu({links, navigationLabel}:{links: NavigationLink[]; na
   }
 
   return <details className={styles.mobileMenu} onKeyDown={handleKeyDown}>
-    <summary ref={summaryRef} className={styles.menuToggle}>Menu <span aria-hidden="true" /></summary>
+    <summary ref={summaryRef} className={styles.menuToggle}>Menu <Plus className={styles.menuOpenIcon} aria-hidden="true" size={20} /><Minus className={styles.menuCloseIcon} aria-hidden="true" size={20} /></summary>
     <nav className={styles.mobileNav} aria-label={navigationLabel}>
       {links.map(link => <a key={link.href} href={link.href} aria-current={link.current}>{link.label}</a>)}
     </nav>

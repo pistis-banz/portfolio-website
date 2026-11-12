@@ -43,16 +43,9 @@
     outline-offset: 5px;
   }
 
-  .menuToggle span::before {
-    content: '+';
-    color: var(--blue);
-    font-size: 24px;
-    line-height: 1;
-  }
-
-  .mobileMenu[open] .menuToggle span::before {
-    content: '−';
-  }
+  .menuOpenIcon, .menuCloseIcon { color: var(--blue); flex-shrink: 0; }
+  .menuCloseIcon, .mobileMenu[open] .menuOpenIcon { display: none; }
+  .mobileMenu[open] .menuCloseIcon { display: block; }
 
   .header .mobileNav {
     position: absolute;

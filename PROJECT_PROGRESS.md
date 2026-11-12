@@ -53,3 +53,21 @@
 - Présentation publique des noms FIJADA et Belkin SAS confirmée. Autorisation de publication des captures à confirmer séparément ; médias reportés. Dates, établissement, PDF et URL publiques des projets restent non fournis.
 - Les anciennes mentions de coordonnées, nom, niveau de formation ou rôles non confirmés dans ce journal sont historiques et remplacées par cette mise à jour. Recette navigateur, validation visuelle, URL de production et contrôles Cloudflare restent à réaliser avant publication.
 - Vérifications exécutées : `corepack pnpm lint`, `corepack pnpm build`, puis `corepack pnpm typecheck` réussis. Contrôle des HTML exportés EN/FR : quatre liens de contact et présence du nom, d'Upwork et de Prisma dans les CV vérifiés. Ouverture réelle des liens et parcours navigateur non vérifiés.
+
+## Préférence de délégation
+
+- Le propriétaire souhaite une sélection et une délégation automatiques aux rôles adaptés pour les prochaines demandes du dépôt. Préférence consignée dans `AGENTS.md`, applicable seulement si la session autorise et expose les sous-agents. En cas d'indisponibilité, exécution séquentielle annoncée ; aucun lancement permanent en arrière-plan.
+- Contrôles de cette modification documentaire : build et typecheck réussis ; `git diff --check` réussi. Lint lancé mais interrompu après une attente prolongée, résultat non vérifié. Aucun changement d'interface à valider au navigateur.
+
+## Préférence de design
+
+- Le propriétaire souhaite utiliser `impeccable` et les autres compétences de design installées pertinentes pour guider les travaux d'interface. Préférence consignée dans `AGENTS.md`, sous réserve de leur disponibilité et des instructions de la session. Aucune interface modifiée.
+- Compétences complémentaires désignées : `web-design-guidelines`, `ui-ux-pro-max`, `frontend-design` et `design-taste-frontend` ; les combiner selon la tâche et demander un choix au propriétaire en cas de dilemme de design important non tranché.
+- Le propriétaire choisit `lucide-react` pour les icônes d'interface. Version exacte `1.72.0` installée avec pnpm ; les icônes existantes n'ont pas encore été remplacées. Le registre npm déclare la compatibilité avec React 19.
+- Installation vérifiée par l'import de `Menu` ; `corepack pnpm lint`, `corepack pnpm build` et `corepack pnpm typecheck` réussis. Aucun changement visuel, parcours navigateur non exécuté. L'installation signale que la version existante d'ESLint 9 n'est plus maintenue ; mise à jour à examiner séparément.
+- Icônes fonctionnelles remplacées par Lucide : flèches, localisation et état du menu mobile ; illustrations abstraites conservées. Vérifications : lint, build et typecheck réussis ; présence des icônes et liens principaux contrôlée dans les HTML exportés EN/FR. La navigation réelle et le rendu responsive restent à vérifier au navigateur.
+
+## Espaces de contact
+
+- Accueil et page Contact remaniés avec un composant partagé et deux variantes, inspirés des références fournies : composition en deux colonnes, coordonnées hiérarchisées, CTA e-mail et icônes Lucide. Textes EN/FR locaux, liens existants préservés et aucun formulaire serveur ajouté.
+- `corepack pnpm lint`, `corepack pnpm build` et `corepack pnpm typecheck` réussis. Contrôle des HTML exportés : un H1 et présence des quatre liens de contact sur les pages d'accueil et Contact EN/FR. Navigateur de contrôle indisponible ; rendu mobile/desktop, clavier et ouvertures réelles des liens à vérifier manuellement.
