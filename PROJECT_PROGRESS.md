@@ -1,5 +1,15 @@
 # État du projet
 
+## Situation actuelle
+
+- Portfolio bilingue déployé sur `https://pistis.pistisbasolua.workers.dev/` ; la dernière version effectivement publiée et les derniers changements doivent encore être comparés dans le navigateur.
+- Projets et CV améliorés, portrait et favicon intégrés ; la page 404 personnalisée est créée. Le cadrage du portrait, la 404 en ligne, les parcours clavier et l'affichage mobile, tablette et ordinateur restent à vérifier.
+- Captures réelles des projets et PDF de CV non fournis ; droits de diffusion des captures clients à confirmer. Canonical, hreflang, sitemap et image sociale restent à finaliser avec l'URL définitive.
+- Derniers contrôles applicatifs : `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis après l'ajustement du portrait. L'avertissement d'accessibilité relevé sur une phrase française de la 404 attend l'accord du propriétaire pour correction.
+- Les commits sont désormais créés automatiquement après les lots ; push et déploiement nécessitent toujours une demande explicite. L'état Git doit être vérifié au moment considéré.
+
+## Historique initial
+
 - Branche : `main` ; base : `5c31bf4` (initialisation).
 - Lots 0, 1 et 2 : pages implémentées, dont accueil bilingue, études de cas, About, CV HTML et contact. Les projets, textes et coordonnées sont stockés localement ; validation visuelle encore attendue.
 - Lot 3 : export statique et redirection Cloudflare préparés ; publication et recette sur Cloudflare Pages non effectuées. Site de prévisualisation, pas encore prêt pour une publication professionnelle : les vérifications de parcours, des coordonnées et des médias restent à effectuer.
@@ -16,11 +26,11 @@
 ## À compléter
 
 - Vérifier les coordonnées en conditions réelles et confirmer les droits de diffusion des captures clients.
-- Fournir si souhaité les captures autorisées et anonymisées, le portrait, les CV PDF et les dates de formation ou de mission.
+- Fournir si souhaité les captures autorisées et anonymisées, les CV PDF et les dates de formation ou de mission ; le portrait a été fourni depuis.
 - Choisir l'URL de production pour définir canonical, hreflang absolus, sitemap et image sociale. Aucune URL fictive n'est utilisée.
-- La typographie système évite un téléchargement externe au build ; les polices Sora, Inter et IBM Plex Mono restent à intégrer localement si souhaité.
+- Les polices Sora, Inter et IBM Plex Mono ont depuis été intégrées localement.
 - Avant publication : contrôler l'accessibilité, le rendu mobile, les métadonnées et la redirection `/` sur la preview Pages. Commande de build : `corepack pnpm build` ; dossier de sortie : `out`.
-- Aucun commit, push ou déploiement effectué par Codex.
+- Au moment de cet état initial, aucun commit, push ou déploiement n'avait été effectué par Codex.
 
 ## Orchestration et gate 1 — 10 novembre 2026
 
@@ -88,7 +98,7 @@
 
 ## Portrait fourni par le propriétaire
 
-- Portrait réel intégré dans le visuel de l'accueil EN/FR, avec texte alternatif localisé et accents de la direction graphique ; une copie est conservée à la racine.
+- Portrait réel intégré dans le visuel de l'accueil EN/FR, avec texte alternatif localisé. Le fichier utilisé par le site est `public/images/portrait-portfolio.webp`.
 - `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis. Présence du fichier et des textes alternatifs vérifiée dans l'export des deux langues ; revue indépendante positive. Cadrage et rendu responsive restent à vérifier dans un navigateur.
 - Ajustement ultérieur du cadrage dans le Hero : légère augmentation de l'échelle, position centrée et suppression du texte et de la décoration superposés. L'image source reste inchangée ; `pnpm lint`, `pnpm typecheck` et `pnpm build` réussis, revue indépendante positive. Le navigateur intégré est indisponible : vérifier le cadrage desktop, tablette et mobile manuellement.
 
