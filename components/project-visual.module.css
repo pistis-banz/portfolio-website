@@ -1,0 +1,7 @@
+.visual{position:relative;min-height:280px;overflow:hidden;padding:24px;display:flex;flex-direction:column;justify-content:space-between;background:var(--lime);color:var(--ink)}
+.tone1{background:#d9dbfb}.tone2{background:var(--ink);color:white}.large{min-height:400px}
+.number,.placeholder{position:relative;z-index:1;font:700 11px/1.5 monospace;letter-spacing:.08em;text-transform:uppercase}
+.placeholder{align-self:flex-start;max-width:90%;padding:9px 11px;background:var(--paper);color:var(--ink)}
+.symbol{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(120px,16vw,230px);line-height:1;color:var(--blue)}
+.tone2 .symbol{color:var(--lime)}.image{object-fit:cover}
+@media(max-width:800px){.visual{min-height:240px}.large{min-height:300px}}
