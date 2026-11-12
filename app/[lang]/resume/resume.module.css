@@ -1,0 +1,17 @@
+.layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: clamp(40px, 7vw, 96px); }
+.section + .section { margin-top: 64px; }
+.section h2 { margin: 0 0 24px; font-size: clamp(26px, 3vw, 36px); letter-spacing: -.035em; }
+.introduction { max-width: 65ch; line-height: 1.7; color: #505050; }
+.subheading { margin: 40px 0 20px; font-size: 17px; }
+.entry { padding: 24px 0; border-top: 1px solid #bbb; }
+.entry h3, .entry h4 { margin: 0; font-size: 22px; letter-spacing: -.03em; }
+.entry h4 a { display: inline-flex; align-items: baseline; gap: 8px; }
+.entry h4 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.entry p { margin: 12px 0 0; max-width: 65ch; line-height: 1.7; color: #505050; }
+.entry .category { margin: 0 0 10px; color: var(--blue); font-size: 13px; font-weight: 700; }
+.sidebar .entry h3 { font-size: 18px; }
+.download { margin: -30px 0 64px; }
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; gap: 64px; }
+  .section + .section { margin-top: 48px; }
+}
