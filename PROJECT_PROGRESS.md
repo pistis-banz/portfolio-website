@@ -127,3 +127,8 @@
 - Captures fournies int?gr?es aux cartes et ?tudes de cas EN/FR, avec textes alternatifs localis?s. Le propri?taire pr?cise que les informations visibles sur la capture SALMOSPHARM sont fictives.
 - `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` r?ussis ; pr?sence des images v?rifi?e dans les quatre ?tudes de cas export?es. V?rification visuelle et responsive en navigateur non r?alis?e ; ? contr?ler manuellement.
 - Revue ind?pendante par sous-agent non r?alis?e : d?l?gation interdite dans cette session. Aucun push ni d?ploiement.
+
+## Compression de la capture Belkin
+
+- Capture WebP recompress?e ? dimensions identiques : 701 498 ? 107 434 octets (environ 85 % de r?duction). L?original fourni ? la racine est conserv?.
+- `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` r?ussis ; fichier export? identique et r?f?rences EN/FR v?rifi?es. Image inspect?e visuellement ; parcours et rendu navigateur non v?rifi?s. D?l?gation indisponible dans cette session.
