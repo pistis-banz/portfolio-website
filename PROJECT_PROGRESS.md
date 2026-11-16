@@ -121,3 +121,9 @@
 - Les champs possèdent des labels et sont requis. À la demande du propriétaire, ils sont réinitialisés après la demande d'ouverture de la messagerie, et un toast Sonner bilingue précise que le visiteur doit terminer l'envoi. Ce retour ne confirme ni l'ouverture effective de la messagerie ni la livraison. Les anciennes mentions du périmètre excluant tout champ de contact sont remplacées par cette demande explicite ; le site reste statique.
 - `corepack pnpm lint`, `corepack pnpm build` et `corepack pnpm typecheck` réussis. Vérification des quatre HTML exportés : formulaire, destination, labels et champs requis présents. L'arbre d'accessibilité Chrome de l'accueil FR montre les deux champs et le bouton. Ouverture effective d'une messagerie, envoi, clavier complet et rendu mobile restent à tester manuellement.
 - Toast : Sonner 2.0.8 installé et verrouillé, compatible avec React 19 selon ses dépendances déclarées. Après cette modification, lint, build et typecheck réussis ; les quatre HTML exportés contiennent le formulaire, les labels et champs requis. La réinitialisation et le toast n'ont pas été testés en interaction navigateur ; tester avec une application de messagerie configurée. Si aucune messagerie ne s'ouvre, la saisie est déjà réinitialisée et l'adresse de contact reste visible.
+
+## Captures Belkin et SALMOSPHARM
+
+- Captures fournies int?gr?es aux cartes et ?tudes de cas EN/FR, avec textes alternatifs localis?s. Le propri?taire pr?cise que les informations visibles sur la capture SALMOSPHARM sont fictives.
+- `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` r?ussis ; pr?sence des images v?rifi?e dans les quatre ?tudes de cas export?es. V?rification visuelle et responsive en navigateur non r?alis?e ; ? contr?ler manuellement.
+- Revue ind?pendante par sous-agent non r?alis?e : d?l?gation interdite dans cette session. Aucun push ni d?ploiement.

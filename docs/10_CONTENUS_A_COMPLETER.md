@@ -15,8 +15,8 @@ Les éléments sont organisés pour **ne pas bloquer l'implémentation**. Ce fic
 | ID | Information | État | Comportement d'attente |
 |---|---|---|---|
 | M-01 | Captures FIJADA (public, backoffice, RTL) | Disponibles chez propriétaire, non transmises | Illustration de marque, sans fausse capture |
-| M-02 | Captures SALMOSPHARM (tableau de bord, produits, ventes) | Disponibles, non transmises | Illustration de marque, sans fausse capture |
-| M-03 | Captures Belkin (public, blog, admin) | Disponibles, non transmises | Illustration de marque, sans fausse capture |
+| M-02 | Captures SALMOSPHARM (tableau de bord, produits, ventes) | Capture du tableau de bord fournie et int?gr?e ; donn?es visibles confirm?es fictives par le propri?taire | Autres captures non fournies |
+| M-03 | Captures Belkin (public, blog, admin) | Capture de la page publique fournie et int?gr?e | Autres captures non fournies |
 | M-04 | Portrait professionnel | Fourni par le propriétaire | Portrait réel intégré à l'accueil |
 | M-05 | CV anglais PDF actualisé | Non fourni dans ce pack | Page Resume HTML ; cacher Download CV |
 | M-06 | CV français PDF actualisé | Non fourni | Page Resume HTML ; cacher Download CV |
