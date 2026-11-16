@@ -23,7 +23,7 @@ Les éléments sont organisés pour **ne pas bloquer l'implémentation**. Ce fic
 | M-07 | Date et intitulé exact de la formation | Niveau licence en informatique confirmé ; établissement et date non fournis | Formation décrite sans établissement ni date inventés |
 | M-08 | Périodes des missions FIJADA / Belkin | À confirmer | Ne pas montrer une timeline chronologique datée |
 | M-09 | Contribution individuelle détaillée Belkin / SALMOSPHARM | Fournie par le propriétaire | Intégrée dans les études de cas |
-| M-10 | URLs publiques production FIJADA / Belkin | À confirmer/valider | Cacher `Visit site` |
+| M-10 | URLs publiques FIJADA / Belkin | Fournies : https://fijada.org/ et https://www.belkinsas.com/ | Liens ajoutés aux études de cas ; SALMOSPHARM est un logiciel sans site fourni |
 | M-11 | Publicité autorisée du code des 3 projets | FIJADA/Belkin privés, Salmospharm inaccessible ou non confirmé | Cacher `View code` sur les case studies |
 | M-12 | Technologies supplémentaires à mettre en avant | React, Next.js, TypeScript, JavaScript, Tailwind CSS, Node.js, Express.js, Laravel, PHP, Python, PostgreSQL, MySQL, SQLite et Prisma fournis | Compétences présentées séparément des stacks propres aux projets ; Docker non revendiqué |
 | M-13 | Témoignages clients / données chiffrées | Non fournis | Ne pas créer les sections |

@@ -32,6 +32,7 @@ export default async function Page({params}:{params:Promise<{lang:string;slug:st
         <p className="label">{t.completed}</p>
         <h2>{t.stack}</h2>
         <div className="tags">{p.stack.map(s=><span key={s}>{s}</span>)}</div>
+        {p.website && <div className="actions"><a className="button" href={p.website}>{t.visitSite} <ArrowUpRight className="icon-inline" aria-hidden="true" size={18} /></a></div>}
       </aside>
       <div className={styles.content}>{sections.map(({title,body},i)=><section className={styles.section} key={title}><span className={styles.index}>0{i+1}</span><div><h2>{title}</h2><p>{body}</p></div></section>)}
         <section className={styles.section}><span className={styles.index}>05</span><div><h2>{lang==='fr'?'Captures du projet':'Project screenshots'}</h2><p>{hasProjectScreenshot(slug) ? (lang==='fr'?'Une capture du projet est présentée ci-dessus.':'A project screenshot is shown above.') : (lang==='fr'?'Les captures réelles du projet seront ajoutées ici lorsqu’elles seront disponibles.':'Real project screenshots will be added here when available.')}</p></div></section>

@@ -132,3 +132,9 @@
 
 - Capture WebP recompress?e ? dimensions identiques : 701 498 ? 107 434 octets (environ 85 % de r?duction). L?original fourni ? la racine est conserv?.
 - `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` r?ussis ; fichier export? identique et r?f?rences EN/FR v?rifi?es. Image inspect?e visuellement ; parcours et rendu navigateur non v?rifi?s. D?l?gation indisponible dans cette session.
+
+## Liens des projets FIJADA et Belkin
+
+- Liens fournis par le propriétaire ajoutés aux études de cas EN/FR ; aucun lien de site pour SALMOSPHARM.
+- `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` réussis ; destinations, libellés EN/FR et absence de bouton SALMOSPHARM vérifiés dans les pages exportées. Belkin a répondu HTTP 200 ; le site FIJADA est indexé, mais son accès direct reste à confirmer depuis un navigateur.
+- Parcours navigateur et revue indépendante non réalisés : délégation interdite dans cette session. Aucun push ni déploiement.
