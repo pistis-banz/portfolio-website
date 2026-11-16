@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/content/seo';
 import {ArrowDownToLine, ArrowUpRight} from 'lucide-react';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
@@ -8,9 +9,11 @@ import styles from './resume.module.css';
 
 export async function generateMetadata({params}: {params: Promise<{lang: string}>}) {
   const {lang} = await params;
-  return lang === 'fr'
+  if (!isLocale(lang)) return {};
+  const metadata = lang === 'fr'
     ? {title: 'Parcours et CV', description: 'Parcours, projets, formation et compétences de Pistis Banzietele en développement logiciel.'}
     : {title: 'Experience & Resume', description: 'Explore Pistis Banzietele’s software projects, education and technical skills.'};
+  return pageMetadata(lang, '/resume', metadata.title, metadata.description);
 }
 
 export default async function Page({params}: {params: Promise<{lang: string}>}) {

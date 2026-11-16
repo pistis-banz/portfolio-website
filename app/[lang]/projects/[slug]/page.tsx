@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/content/seo';
 import {ArrowUpRight, ArrowLeft} from 'lucide-react';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
@@ -11,7 +12,7 @@ export async function generateMetadata({params}:{params:Promise<{lang:string;slu
   const {lang,slug}=await params;
   const p=projects.find(p=>p.slug===slug);
   if(!p||!isLocale(lang))return {};
-  return {title:`${p.name} — ${lang==='en'?'Case Study':'Étude de cas'}`,description:p[lang].summary};
+  return pageMetadata(lang, `/projects/${slug}`, `${p.name} — ${lang==='en'?'Case Study':'Étude de cas'}`, p[lang].summary);
 }
 export default async function Page({params}:{params:Promise<{lang:string;slug:string}>}){
   const {lang,slug}=await params;

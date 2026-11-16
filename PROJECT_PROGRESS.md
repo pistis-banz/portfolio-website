@@ -138,3 +138,10 @@
 - Liens fournis par le propriétaire ajoutés aux études de cas EN/FR ; aucun lien de site pour SALMOSPHARM.
 - `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` réussis ; destinations, libellés EN/FR et absence de bouton SALMOSPHARM vérifiés dans les pages exportées. Belkin a répondu HTTP 200 ; le site FIJADA est indexé, mais son accès direct reste à confirmer depuis un navigateur.
 - Parcours navigateur et revue indépendante non réalisés : délégation interdite dans cette session. Aucun push ni déploiement.
+
+## Référencement bilingue
+
+- URL canonique provisoire confirmée par le propriétaire : `https://pistis.pistisbasolua.workers.dev`. Domaine `pistis.dev` envisagé, non acquis ; après acquisition et configuration, modifier `siteUrl` dans `content/seo.ts`, redéployer puis organiser la redirection et les propriétés de recherche.
+- Titres, descriptions, canonical et hreflang réciproques, Open Graph et Twitter sur les 16 pages ; portrait réel pour le partage, JSON-LD Person sur les accueils, sitemap et robots statiques.
+- `corepack pnpm lint`, `corepack pnpm typecheck` et `corepack pnpm build` réussis ; contrôle automatisé des 16 fichiers HTML exportés, du sitemap, de robots et du JSON-LD réussi.
+- Vérification navigateur non réalisée ; l’adresse Workers ne répond pas depuis cet environnement. Après déploiement, vérifier les pages, le sitemap et robots en ligne et soumettre le sitemap dans Search Console. Indexation et affichage des aperçus restent à confirmer. Aucun déploiement ni push ; revue par sous-agent interdite dans cette session.
